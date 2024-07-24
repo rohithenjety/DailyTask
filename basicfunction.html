@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+       div{
+        background-color: aqua;
+       } 
+       #display{
+        transition: font-size 0.3s , color 0.1s;
+       }
+    </style>
+</head>
+<body>
+    
+    <div >
+        <button  id="rohith"> Know Date </button>
+        <p id="display"> </p>
+    </div>
+    <h1 id="name">I am Rohith Enjety</h1>
+    <script>
+       var date= document.getElementById("rohith");
+       var disp=document.getElementById("display");
+       date.addEventListener('click',()=>{
+          disp.textContent=  "Date is" +new Date();
+       });
+       
+       date.addEventListener('click',()=>{
+       disp.style.color='red';
+       });
+       var named=document.getElementById("name");
+       named.addEventListener('mouseover',()=>{
+        named.innerText="I am Rohith Enjety  , i am a gcp cloud architect";
+       });
+       named.addEventListener('mouseout',()=>{
+        named.textContent="I am Rohith Enjety";
+       });
+    </script>
+</body>
+</html>
