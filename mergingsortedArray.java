@@ -41,13 +41,14 @@ class Rohith{
         else{
             arr3[k++]=arr2[j++];
         }
+    }
         while(i< arr1.length){
             arr3[k++]=arr1[i++];
         }
         while(j< arr2.length){
-            arr3[k++]=arr1[j++];
+            arr3[k++]=arr2[j++];
         }
-       }
+       
 
 
     }
