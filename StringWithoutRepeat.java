@@ -5,7 +5,7 @@ class Rohith{
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         String ss=s.next();
-    HashSet<String> hs=new HashSet<>();
+    HashSet<Character> hs=new HashSet<>();
     // char[] ro=ss.toCharArray();
     for(int i=0;i<ss.length();i++){
         hs.add(ss.charAt(i));
@@ -18,5 +18,12 @@ class Rohith{
         
     System.out.println("Unique characters: " + strs.toString());
     s.close();
+    }
+}
+
+public class StringWithoutRepeat {
+
+    public static void main(String[] args) {
+        
     }
 }

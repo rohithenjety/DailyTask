@@ -22,3 +22,17 @@ class Rohith{
           
     }
 }
+
+
+//program with reverse a string along with the palindrome.
+
+// import java.util.*;
+// class HelloWorld {
+//     public static void main(String[] args) {
+//  String name="Rohith";
+//  String ss=new StringBuilder(name).reverse().toString();
+//  System.out.println(ss+" ");
+ 
+//  System.out.println(name.equals(ss));
+//     }
+// }

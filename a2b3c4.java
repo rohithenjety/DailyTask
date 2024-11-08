@@ -14,7 +14,7 @@ class HelloWorld {
         for(int i=0;i<n;i+=2){
             int p=rohith[i+1] -'0';
             for(int j=0;j<p;j++){
-                System.out.println(rohith[i]);
+                System.out.print(rohith[i]);
             }
         }
          s.close();
