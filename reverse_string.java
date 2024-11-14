@@ -34,3 +34,19 @@ class Rohith{
 //  System.out.println(name.equals(ss));
 //     }
 // }
+
+// import java.util.*;
+// class Main {
+//     public static void main(String[] args) {
+//         StringBuilder ss=new StringBuilder();
+//         String s="Rohith";
+//         int n=s.length();
+        
+            
+//            ss.append(s);
+//            ss.reverse().toString();
+            
+        
+//         System.out.println(ss+" ");
+//     }
+// }
