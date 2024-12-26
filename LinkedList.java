@@ -5,7 +5,7 @@ public Node(int value){
    this.value=value;
 }
 public Node(int value, Node next) {
-    this.value = value;
+    this.value = value;   
     this.next = next;
 }
  
@@ -71,6 +71,16 @@ public class LinkedList {
     temp.next=temp.next.next;
    }
 
+   public Node find(int value){
+   Node temp=head;
+   while(temp !=null){
+   if(temp.value == value){
+     return temp;
+   }
+   temp=temp.next;
+   }
+   return null;
+   }
 
   public void display(){
     Node temp=head;
@@ -96,6 +106,7 @@ public static void main(String[] args) {
     // l.deletelast();
     l.deleteany(5);
     l.display();
+  System.out.println( l.find(47)+" ");
     
 }
 }
