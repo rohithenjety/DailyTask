@@ -18,6 +18,7 @@ public class LinkedList {
      node.next=head;
      head=node;
   }
+
   public void insertNodeLast(int value){
     
     Node node=new Node(value);
@@ -29,11 +30,22 @@ public class LinkedList {
     while(temp.next !=null){
     temp=temp.next;
    }
-    temp.next=node;
-   
-
-    
+    temp.next=node;  
  }
+
+   public void insertany(int index, int  value){
+    Node temp=head;
+    Node newNode=new Node(value);
+
+    int  i=0;
+    while(temp!=null && i< index-1){
+      temp=temp.next;
+      i++;
+    }
+    newNode.next=temp.next;
+    temp.next=newNode;
+
+   }
   public void display(){
     Node temp=head;
     while(temp.next !=null){
@@ -51,7 +63,8 @@ public static void main(String[] args) {
    for(int i=0;i<10;i++){
     l.insertNodeLast(i);
    }
-   
+   l.insertany(1,17);
+   l.insertany(4, 33);
     l.display();
 }
 }
